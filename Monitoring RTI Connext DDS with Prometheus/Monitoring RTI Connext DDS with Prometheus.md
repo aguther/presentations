@@ -35,6 +35,12 @@ footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | July 20
 
 ---
 
+# RTI Connext DDS
+
+![](images/RTI_Diagram_Connext_DDS_Professional.webp)
+
+---
+
 # Monitoring Library
 
 * Can be dynamically loaded and attached to RTI Connext DDS libraries
