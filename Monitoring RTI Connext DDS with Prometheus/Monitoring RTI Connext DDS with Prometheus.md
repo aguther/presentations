@@ -84,7 +84,7 @@ footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | July 20
 
 # ![h:48](images/PrometheusLogo.png) Prometheus - Architecture
 
-![](images/PrometheusArchitecture.svg)
+![](https://prometheus.io/assets/architecture.png)
 
 ---
 
