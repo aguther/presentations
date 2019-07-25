@@ -96,7 +96,7 @@ footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | July 20
 
 # ![h:48](images/GrafanaLogo.svg) Grafana
 
-![](images/GrafanaOverview.png)
+![](https://upload.wikimedia.org/wikipedia/commons/b/b3/Grafana_screenshot.png)
 
 ---
 
