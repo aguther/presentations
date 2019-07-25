@@ -80,23 +80,15 @@ footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | July 20
 
 > Prometheus, a Cloud Native Computing Foundation project, is a systems and service monitoring system. It collects metrics from configured targets at given intervals, evaluates rule expressions, displays the results, and can trigger alerts if some condition is observed to be true.
 
----
-
-# ![h:48](images/PrometheusLogo.png) Prometheus - Architecture
-
-![](https://prometheus.io/assets/architecture.png)
-
----
-
 # ![h:48](images/GrafanaLogo.svg) Grafana
 
 > Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
 
 ---
 
-# ![h:48](images/GrafanaLogo.svg) Grafana
+# Architecture
 
-![](https://upload.wikimedia.org/wikipedia/commons/b/b3/Grafana_screenshot.png)
+![h:500](https://prometheus.io/assets/architecture.png)
 
 ---
 
