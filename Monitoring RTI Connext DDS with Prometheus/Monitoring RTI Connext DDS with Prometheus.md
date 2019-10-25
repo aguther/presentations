@@ -168,8 +168,17 @@ dds_routing_service_process_uptime_seconds{routing_service="default",} 301.0
 
 * ✅ Separation of monitoring, alerting from business logic
 * ⛔ Additional DDS traffic is generated for monitoring
+* ⛔ Prometheus does not support text, so information like QoS cannot be tracked
 * 🤔 Revisit of labels to be used (new set of labels create a new series)
 * 🤔 Usage of collector as side-car to have a more clear mapping to pods
+
+---
+
+# Outlook / Ideas
+
+* having RTI Monitoring Library with configurable / customizable adapters would be great
+
+This would allow to e.g. provide a direct Prometheus interface on-top of the library removing the need to publish additional data via DDS. Another plus would be the fact, that Prometheus would exactly track the mapping of data to pods.
 
 ---
 
@@ -193,3 +202,15 @@ https://community.rti.com/documentation
 https://www.github.com/aguther/dds-examples
 https://www.github.com/aguther/deployment-kubernetes
 https://www.github.com/aguther/deployment-containers-rti
+
+---
+
+# Details about deployment
+
+Describe details how system is being deployed
+
+---
+
+# Proposed future architecture
+
+Describe details how system is being deployed
