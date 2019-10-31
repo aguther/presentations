@@ -1,7 +1,7 @@
 ---
 marp: true
 paginate: true
-footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | July 2019
+footer: Monitoring of RTI Connext DDS with Prometheus | Andreas Guther | 2019
 #theme: gaia
 ---
 
@@ -121,6 +121,17 @@ dds_routing_service_process_uptime_seconds{routing_service="default",} 301.0
 * Repository dds-examples provides the following console applications:
   * ShapePublisher
   * ShapeSubscriber
+
+---
+
+# Deployment - Kubernetes Structure
+
+![bg right auto h:650](images/Kubernetes_Structure.svg)
+
+* Keepalived + HAProxy for load balancing of control plane
+* metallb for external access to services (in L2 mode)
+* rook-ceph for storage
+* local docker-registry for images
 
 ---
 
