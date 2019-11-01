@@ -175,21 +175,54 @@ dds_routing_service_process_uptime_seconds{routing_service="default",} 301.0
 
 ---
 
-# Conclusions
+# Conclusions - Advantages
 
 * ✅ Separation of monitoring, alerting from business logic
+* ✅ Prometheus / Grafana is a powerful tool for queries and analysis
+* ✅ can be used for long term monitoring and storage
+* ✅ data aggregation/compaction is possible
+* ✅ automatically taking advantage of new features available on the market
+
+---
+
+# Conclusions - Disadvantages
+
 * ⛔ Additional DDS traffic is generated for monitoring
 * ⛔ Prometheus does not support text, so information like QoS cannot be tracked
+
+---
+
+# Conclusions - Things to think about
+
 * 🤔 Revisit of labels to be used (new set of labels create a new series)
 * 🤔 Usage of collector as side-car to have a more clear mapping to pods
 
 ---
 
-# Outlook / Ideas
+# Proposal
 
-* having RTI Monitoring Library with configurable / customizable adapters would be great
+* split RTI Monitoring Library into collection and output part
+* use plugin mechanism for output part to support multiple formats
+* default plugin could be the todays interface
+* foundation on OMG "Data Distribution Service (DDS) Status Monitoring"
 
-This would allow to e.g. provide a direct Prometheus interface on-top of the library removing the need to publish additional data via DDS. Another plus would be the fact, that Prometheus would exactly track the mapping of data to pods.
+---
+
+# Proposal - Architecture
+
+![h:500](images/PrometheusCollectorsProposal.svg)
+
+---
+
+# Proposal - Advantages
+
+* ✅ mapping of monitoring data to pods will work correctly
+* ✅ supports both push and pull based collection
+* ✅ saves resources by using no additional...
+  * ...DDS resources
+  * ...processes like collector
+  * ...network traffic
+* ✅ will allow easy integration of future technologies or custom solutions
 
 ---
 
@@ -213,15 +246,3 @@ https://community.rti.com/documentation
 https://www.github.com/aguther/dds-examples
 https://www.github.com/aguther/deployment-kubernetes
 https://www.github.com/aguther/deployment-containers-rti
-
----
-
-# Details about deployment
-
-Describe details how system is being deployed
-
----
-
-# Proposed future architecture
-
-Describe details how system is being deployed
